@@ -1,7 +1,17 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* Criado por Saulo Frauches 20/05/2021
+*  Front End para o Navbar responsivo
+*  Brincando e treinando...
+*/
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(){
+    
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    
+}
+
+btnMobile.addEventListener('click', toggleMenu);
 
 

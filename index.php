@@ -15,7 +15,9 @@
             
             <nav id="nav">  
                 
-                <button id="btn-mobile">Menu</button>
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
                 
                 <ul id="menu">
                     
