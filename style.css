@@ -59,14 +59,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    
-    
-    #btn-mobile {
-        
-        display: block;
-        
-    }
-    
+      
     #menu {
         
         display: block; 
@@ -100,24 +93,38 @@ a:hover {
         
     }
     
+    
+    
+    
     #btn-mobile {
         
-        diplay: flex;
+        display: flex;
         padding: .5rem 1rem;
         font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        garp: .5rem;
+        gap: .5rem;
         
     }
     
     #hamburger {
         
         width: 20px;
-        border-top: 2px solid;
-       
+        border-top: 2px solid;       
+    }
+    
+    #hamburger::after, #hamburger::before {
         
+        /* Para after funcionar */
+        content:'';
+        display: block;
+        
+        width: 20px;
+        height: 2px;
+        background: blue;
+        margin-top: 5px;
+        background: currentColor;
     }
     
     
