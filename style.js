@@ -5,7 +5,11 @@
 
 const btnMobile = document.getElementById('btn-mobile');
 
-function toggleMenu(){
+function toggleMenu(event){
+    
+    /* Melhorar e experiência no Mobile , touchstart
+     * ativa o click por padrão*/
+    if (event.type === 'touchstart') event.preventDefault();
     
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
@@ -13,5 +17,8 @@ function toggleMenu(){
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+
+/* Melhorar e experiência no Mobile */
+btnMobile.addEventListener('touchstart', toggleMenu); 
 
 

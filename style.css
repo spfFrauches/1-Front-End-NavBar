@@ -3,11 +3,9 @@
 *  Brincando e treinando...
 */
 
-body, ul {
-    
+body, ul {   
     margin: 0px;
     padding: 0px;
-    
 }
 
 a {
@@ -17,20 +15,15 @@ a {
 }
 
 a:hover {
-    
     background: rgba(0,0,0, .05);
-    
 }
 
 #logo {
-    
     font-size: 1.5rem;
     font-weight: bold;
-    
 }
 
-#header {
-    
+#header {  
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
@@ -38,15 +31,12 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
-    
 }
 
-#menu {
-    
+#menu { 
     display: flex;
     list-style: none;
     gap: .5rem;
-    
 }
 
 #menu a {
@@ -59,7 +49,8 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-      
+    
+
     #menu {
         
         display: block; 
@@ -92,10 +83,7 @@ a:hover {
         border-bottom: 2px solid rgba(0, 0, 0, .05);
         
     }
-    
-    
-    
-    
+       
     #btn-mobile {
         
         display: flex;
@@ -122,9 +110,23 @@ a:hover {
         
         width: 20px;
         height: 2px;
-        background: blue;
         margin-top: 5px;
         background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+    
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
     }
     
     
